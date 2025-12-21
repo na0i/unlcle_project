@@ -1,0 +1,178 @@
+.philosophy {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.philosophy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+/* 로고 섹션 */
+.philosophy-logo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.logo-placeholder-large {
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.philosophy-logo {
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 타이틀 섹션 */
+.philosophy-title-section {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 900px;
+}
+
+.philosophy-main-title {
+  font-size: 3rem;
+  color: #009C5E;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.philosophy-sub-title {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* 박스 섹션 */
+.philosophy-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.philosophy-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 156, 94, 0.2);
+}
+
+.box-index {
+  position: absolute;
+  top: -15px;
+  left: 2.5rem;
+  width: 40px;
+  height: 40px;
+  background-color: #009C5E;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.box-title {
+  font-size: 1.5rem;
+  color: #009C5E;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.box-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .philosophy-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .philosophy {
+    padding: 3rem 1.5rem;
+  }
+
+  .philosophy-logo-section {
+    margin-bottom: 3rem;
+  }
+
+  .logo-placeholder-large {
+    width: 250px;
+    height: 125px;
+  }
+
+  .philosophy-title-section {
+    margin-bottom: 3rem;
+  }
+
+  .philosophy-main-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .philosophy-sub-title {
+    font-size: 1.1rem;
+  }
+
+  .philosophy-boxes {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .philosophy-box {
+    padding: 2rem;
+  }
+
+  .box-index {
+    left: 2rem;
+  }
+
+  .box-title {
+    font-size: 1.3rem;
+  }
+
+  .box-description {
+    font-size: 0.95rem;
+  }
+}
